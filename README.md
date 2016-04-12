@@ -1,4 +1,4 @@
 # pythonexercises
 Exercises for Python Training
 
-A minimal code samples to explain basics to Python beginners. 
+Probable solutions to the Python exercises in the training session.  
