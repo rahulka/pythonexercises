@@ -1,4 +1,4 @@
-from functionalExercises import fmax
+from maxFunction import fmax
 from hamcrest import *
 import unittest
 
