@@ -17,6 +17,10 @@ class TestFunctionMax(unittest.TestCase):
     def test_with_three_values(self):
         assert_that(fmax(1, 2, 3), is_(equal_to(3)))
 
+    def test_with_arbitrary_args(self):
+        args = [1, 2, 3]
+        assert_that(fmax(*args), is_(equal_to(3)))
+
 
 if __name__ == "__main__":
     unittest.main()

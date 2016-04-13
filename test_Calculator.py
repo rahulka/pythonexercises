@@ -4,6 +4,7 @@ import unittest
 from hamcrest import *
 from operator import add, mul
 
+
 class TestCalculator(unittest.TestCase):
 
     def test_if_zero_params_is_raising_an_exception(self):
@@ -17,4 +18,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_multiple_values_to_multiplication(self):
         assert_that(calculator(mul, 1, 2, 3), is_(equal_to(6)))
+
+    def test_mulitplication_with_arbitrary_variables(self):
+        args = [1, 2, 3]
+        assert_that(calculator(mul, *args), is_(equal_to(6)))
 
