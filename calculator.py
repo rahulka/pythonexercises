@@ -9,5 +9,7 @@ def calculator(action, *args):
 
 if __name__ == "__main__":
     print("Res:" + str(calculator(add, 1, 2, 4)))
+    print("Res:" + str(calculator(mul, 1, 2, 4)))
+    print("Res:" + str(calculator(sub, 1, 2, 4)))
     print("Res:" + str(calculator(add, 1)))
 
